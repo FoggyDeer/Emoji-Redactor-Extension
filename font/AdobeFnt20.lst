@@ -1,0 +1,25 @@
+%!Adobe-FontList 1.20
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:NotoEmoji-Regular
+FamilyName:Noto Emoji
+StyleName:Regular
+FullName:Noto Emoji Regular
+MenuName:Noto Emoji
+StyleBits:0
+WritingScript:Emoji
+OutlineFileName:C:\Other\Web\emojiRedactor\Font\NotoEmoji.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:TrueTypeVariableFont
+FileLength:1936736
+FileModTime:1651179600
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Noto Emoji
+%EndFont
+

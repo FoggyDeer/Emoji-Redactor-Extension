@@ -1,0 +1,84 @@
+		/*-- #EMOJI_PANEL ------------------------------------------------------------ */
+
+		.magic_designer#emoji_panel {
+			all: initial;
+			display: none;
+			position: fixed;
+			color-scheme: none;
+			background-color: transparent !important;
+			/*box-shadow: 0px 0px 8px -3px #0000006b;*/
+			user-select: none;
+			z-index: 2147483647;
+			opacity: 0;
+			transition: opacity 0.4s;
+			will-change: left, top, opacity;
+		}
+
+		.magic_designer#emoji_panel.bottom_location {
+			width: 392px;
+			height: 446px;
+			bottom: 0;
+		}
+
+		.magic_designer#emoji_panel.right_location {
+			width: 453px;
+			height: 390px;
+			right: 0;
+		}
+
+		.magic_designer#emoji_panel.top_location {
+			width: 397px;
+			height: 446px;
+			top: 0;
+		}
+
+		.magic_designer#emoji_panel.left_location {
+			width: 422px;
+			height: 390px;
+			left: 0;
+		}
+
+		.magic_designer#emoji_panel[visible] {
+			opacity: 1;
+		}
+
+		/*-- #EMOJI_SCRIM ------------------------------------------------------------ */
+		.magic_designer#hover_scrim {
+			all: initial;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0;
+			transition: opacity 0.2s;
+			z-index: 2147483646;
+			pointer-events: none;
+		}
+
+		.magic_designer#hover_scrim.visible {
+			opacity: 0.4;
+			pointer-events: auto;
+		}
+
+		.magic_designer#emoji_panel.closed {
+			transition: 0.18s cubic-bezier(.43, .32, .35, .74);
+		}
+
+		.magic_designer#emoji_panel.bottom_location.closed {
+			bottom: -450px;
+		}
+
+		.magic_designer#emoji_panel.right_location.closed {
+			right: -426px;
+		}
+
+		.magic_designer#emoji_panel.top_location.closed {
+			top: -450px;
+		}
+
+		.magic_designer#emoji_panel.left_location.closed {
+			left: -426px;
+		}

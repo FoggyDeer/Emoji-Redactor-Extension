@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Emoji Redactor",
+    "description": "Some shit?",
+    "version": "0.1.0",
+    "icons": {
+        "16": "img/logo/16x16.png",
+        "19": "img/logo/19x19.png",
+        "38": "img/logo/38x38.png",
+        "48": "img/logo/48x48.png",
+        "128": "img/logo/128x128.png",
+        "256": "img/logo/256x256.png"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "run_at": "document_start",
+        "css": ["css/emoji-editor.css"],
+        "js": ["js/jquery-3.6.0.js","js/content-script.js"]
+    }],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "html/popup.html"
+    },
+    "permissions": ["storage", "declarativeContent", "activeTab", "scripting", "tabs", "downloads"],
+    "host_permissions": ["<all_urls>"],
+    "web_accessible_resources": [{"resources": ["html/*", "font/*", "config_resources/*"],"matches": ["<all_urls>"]}]
+}
